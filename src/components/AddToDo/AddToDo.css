@@ -1,0 +1,26 @@
+
+.AddtodoWrapper{
+  display: flex;
+ justify-content: center;
+ gap: 1rem;
+}
+.AddtodoWrapper input{
+    background-color: rgba(91, 91, 92, 0.553);
+    border: 1px solid transparent;
+    outline: none;
+    padding:  0.5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    font-size: larger;
+    
+}
+.AddtodoWrapper input::placeholder{
+  color: #fff;
+}
+.AddtodoWrapper button{
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #fff;
+  background-color: orange;
+}

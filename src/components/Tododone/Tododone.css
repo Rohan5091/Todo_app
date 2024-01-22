@@ -1,0 +1,27 @@
+
+.tododoneWrapper{
+  display: flex;
+  border: 2px solid rgb(253, 250, 250);
+  border-radius: 20px;
+  padding: 4rem;
+  gap: 2rem;
+  text-align: center;
+}
+.circle{
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  
+}
+.circle span{
+  color: white;
+  font-size: x-large;
+}
+.message h1{
+  margin-bottom: 1rem;
+}

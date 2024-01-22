@@ -1,0 +1,29 @@
+.todowrapper{
+  display: flex;
+  gap: 1rem;
+   padding: 10px 3rem;
+   border: 2px solid #fff;
+   border-radius: 15px;
+   align-items: center;
+   background-color: #212121;
+}
+.todowrapper input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  
+}
+
+.btn{
+  cursor: pointer;
+}
+input{
+  background-color: rgba(91, 91, 92, 0.553);
+    border: 1px solid transparent;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
