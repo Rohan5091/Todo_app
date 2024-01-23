@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./AddToDo.css"
+import TodoDispatchContext from "../context/TodoDispatchContext";
+
 
 function AddToDo({updatetodo}) {
-
+   
   let [inputvalue,setInputvalue]=useState("")
-  
+  let [id,setId]=useState(0)
+  const {dispatch}=useContext(TodoDispatchContext)
 
  return(
    <div className="AddtodoWrapper">
@@ -16,7 +19,8 @@ function AddToDo({updatetodo}) {
      />
      <button disabled={(!inputvalue)?true:false} onClick={
       ()=>{
-        updatetodo(inputvalue)
+           setId(id+1)
+           dispatch({type:"add_todo",payload:{id:id,todoText:inputvalue}})
            setInputvalue("")
       } }>Add</button>
    </div>

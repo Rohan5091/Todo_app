@@ -4,7 +4,7 @@ import Todocontext from "../context/context.jsx"
 import "./Tododone.css"
  export default function Tododone() {
 
-  const {list,setList}=useContext(Todocontext)
+  const {list}=useContext(Todocontext)
   const [taskcompleted,SetTaskcompleted]=useState("")
 
   function completedTask() {
@@ -29,7 +29,7 @@ import "./Tododone.css"
                <p>keep it up</p>
             </div>
             <div className="circle">
-                  <span>{taskcompleted}/{list.length}</span>
+                  <span>{taskcompleted}/{list && list.length}</span>
             </div>
        </div>
    )
